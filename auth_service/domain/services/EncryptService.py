@@ -5,6 +5,8 @@ class AESCipher:
     def __init__(self):
         self.key = b"1wOS377woe39ksf/"
         self.iv = b"qawsedploeSD(234"
+        # self.key = b"oW1mY2vHAXbiBQtL"
+        # self.iv = b"CmYUOq8cIpyr1H6p"
         
     def aes_decrypt(self, input_bytes):
         cipher = AES.new(self.key, AES.MODE_CBC, self.iv)
