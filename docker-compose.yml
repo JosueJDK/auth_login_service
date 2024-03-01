@@ -3,6 +3,7 @@ version: '3.8'
 services:
   auth_service_jockey:
     container_name: auth_service_jockey
+    build: .
     image: auth_service_jockey
     ports:
       - "4300:4300"

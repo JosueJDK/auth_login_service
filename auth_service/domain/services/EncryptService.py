@@ -3,8 +3,12 @@ import binascii
 
 class AESCipher:
     def __init__(self):
+        
+        # Credenciales de Produccion
         self.key = b"1wOS377woe39ksf/"
         self.iv = b"qawsedploeSD(234"
+
+        # Credenciales de Desarrollo
         # self.key = b"oW1mY2vHAXbiBQtL"
         # self.iv = b"CmYUOq8cIpyr1H6p"
         
