@@ -2,6 +2,48 @@
 
 Guía de instalación y ejecución del proyecto:
 
+### Ejecución del proyecto
+- Ejecuta el archivo principal o inicia la aplicación según las instrucciones específicas del proyecto.
+
+## Configuración sin Docker
+
+### Requisitos previos
+- Python version 3.12 instalado en tu sistema.
+
+### Pasos detallados para configurar el entorno virtual
+
+1. **Navega al directorio del proyecto:** 
+    ```bash
+    cd auth_login_service
+    ```
+
+2. **Crea un entorno virtual:** 
+    ```bash
+    python -m venv env
+    ```
+
+3. **Activa el entorno virtual:**
+    - En Windows: 
+        ```bash
+        env\Scripts\activate
+        ```
+    - En Linux/Mac: 
+        ```bash
+        source env/bin/activate
+        ```
+
+4. **Instala las dependencias del proyecto:** 
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+5. **Ejecutar el proyecto:** 
+    ```bash
+    python app.py
+    ```
+
+6. **¡Listo! Ahora puedes acceder a la aplicación desde `http://localhost:4300`.**
+
 ## Configuración con Docker
 
 ### Requisitos previos
@@ -47,7 +89,16 @@ Guía de instalación y ejecución del proyecto:
 # Ruta al archivo de configuración en entorno de producción
 # config_path = 'auth_service/domain/services/EncryptService.py'
 
-==>Descomentar para entorno de Producción
+==> Descomentar para entornode desarrollo - QA - Testing
+    # Credenciales de Producción
+    # self.key = b"1wOS377woe39ksf/"
+    # self.iv = b"qawsedploeSD(234"
+
+    # Credenciales de Desarrollo
+    self.key = b"oW1mY2vHAXbiBQtL"
+    self.iv = b"CmYUOq8cIpyr1H6p"
+
+==> Descomentar para entorno Produccion
     # Credenciales de Producción
     self.key = b"1wOS377woe39ksf/"
     self.iv = b"qawsedploeSD(234"
